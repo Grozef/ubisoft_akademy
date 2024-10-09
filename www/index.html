@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubi-Hard</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/Nav.css">
+    <link rel="stylesheet" href="../styles/Carousel.css">
+    <link rel="stylesheet" href="../styles/Promo.css">
+    <link rel="stylesheet" href="../styles/explore.css">
+    <link rel="stylesheet" href="../styles/newstab.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<header class="HeadJob">
+    <nav class="UbiNav">
+        <div class="UbiLogo">
+            <a href="https://www.ubisoft.com/en-us" target="_blank" rel="noopener">
+                <img title="Ubisoft Logo" src="../assets/SVG/Ubisoft Horizontal Logo WHITE_1.png" alt="Ubisoft Logo">
+            </a>
+        </div>
+        
+        <div class="UbiList">
+            <ul class="UbiListUl">
+                <li><a href="#" class="UbiListButton">Play</a></li>
+                <li><a href="#" class="UbiListButton">Shop</a></li>
+                <li><a href="#" class="UbiListButton">Explore</a></li>
+                <li><a href="#" class="UbiListButton">Help</a></li>
+            </ul>
+        </div>
+        
+
+    </nav>
+
+    <div class="CenterNav">
+        <div class="search-bar-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+    </div>
+    
+    <div class="LeftNav">
+        <a class="UbiDl" href="#">Download Ubisoft Connect <i class="fa-solid fa-download"></i></a>
+    
+
+        <i class="fa-solid fa-magnifying-glass search-icon" onclick="toggleSearchBar()"></i>
+    
+        <div class="UbiLogIn">
+            <img title="UserProfile" src="../assets/SVG/user.png">
+        </div>
+    </div>
+</header>
+
+<body>
+
+ <!-- BOUTON BLEU TOP LEFT UBI + -->
+ <a class="UbiButton fixed-button" href="https://store.ubisoft.com/ubisoftplus" target="_blank" rel="noreferrer noopener">
+    <img class="UbiPlusButton" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Bp8eQtQWRJoK6dqcAuaQ/b508629027e6f1cb576f5879030c351b/Ubisoft_2024_Corner_Pin_BLUE_Top_Left_Agno.png" alt="Ubisoft Plus" loading="lazy">
+</a>
+
+
+<div id="UbiCarousel" class="UbiCarousel carousel slide" data-bs-ride="carousel">
+    <div class="UbiCarouselIndicators carousel-indicators">
+        <button type="button" data-bs-target="#UbiCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#UbiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#UbiCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- IMAGES CAROUSS -->
+    <div class="UbiCarouselInner carousel-inner">
+        <div class="UbiCarouselItem carousel-item active slide1">
+            <div class="overlay"></div> 
+            <div class="UbiCarouselCaption carousel-caption">
+                <h2 class="UbiCarouselTittle">ASSASSIN'S CREED SHADOWS</h2>
+                <p class="UbiCarouselText">Become a legendary samurai and a shinobi assassin in feudal Japan. Watch more than 12 minutes of gameplay footage now.</p>
+                <button type="button" class="UbiButtonC">Visit Website</button>
+                <button type="button" class="UbiButtonC ">Watch Trailer</button>
+            </div>
+        </div>
+        <div class="UbiCarouselItem carousel-item slide2">
+            <div class="overlay"></div> 
+            <div class="UbiCarouselCaption carousel-caption">
+                <h1 class="UbiCarouselTittle">XDEFIANT: PLAY SEASON 2 NOW</h1>
+                <p  class="UbiCarouselText" >Cause chaos as the Highwaymen and check out new weapons, maps, and the much-anticipated Bomb mode!</p>
+                <button type="button" class="UbiButtonC">Watch Trailer</button>
+                <button type="button" class="UbiButtonC">Play Free Now</button>
+            </div>
+        </div>
+        <div class="UbiCarouselItem carousel-item slide3">
+             <div class="overlay"></div> 
+            <div class="UbiCarouselCaption carousel-caption">
+                <h1 class="UbiCarouselTittle">STAR WARS OUTLAWS: AVAILABLE NOW</h1>
+                <p class="UbiCarouselText">Experience the first-ever open world Star Wars™ game.</p>
+                <button type="button" class="UbiButtonC">Watch Trailer</button>
+                <button type="button" class="UbiButtonC">Buy</button>
+            </div>
+        </div>
+       
+
+    </div>
+
+    <!-- BOUTON CAROUSS -->
+    <button class="carousel-control-prev UbiCarouselControl" type="button" data-bs-target="#UbiCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon UbiCarouselIcon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next UbiCarouselControl" type="button" data-bs-target="#UbiCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon UbiCarouselIcon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div> 
+
+
+
+
+ <!-- PROMOTION -->
+ <div class="UbiPromo">
+    <div class="UbiPromoImg">
+        <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Bp8eQtQWRJoK6dqcAuaQ/b508629027e6f1cb576f5879030c351b/Ubisoft_2024_Corner_Pin_BLUE_Top_Left_Agno.png" alt="Ubisoft Logo" loading="lazy">
+    </div>
+    <div class="UbiPromoContenu">
+        <h2 class="UbiPromoTittle">Get up to $40 worth* of XDefiant content included with Ubisoft+</h2>
+        <p>With the newest faction, battle pass, cosmetics, and more.<br>
+            <span class="UbiPromoText">*<em>To claim over the course of the running season.</em></span>
+        </p>
+        <div >
+            <a aria-label="Join Now" class="UbiButtonD" href="https://store.ubisoft.com/ubisoftplus" target="_blank" rel="noreferrer noopener">Join Now</a>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Explore More Games -->
+
+ <div class="games">
+    <div class="UbiExploreGames">
+        <h2 class="UbiPromoTitle">Explore More Games</h2>
+    </div>
+
+    <div class="container ss">
+        <div class="draggable-carousel">
+            <div class="game-gallery">
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+                <div class="game-item">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg?imwidth=360" alt="XDefiant" loading="lazy">
+                    <h4>XDefiant</h4>
+                </div>
+            </div>
+        </div>
+        <div class="dd">
+            <a class="UbiButtonD" aria-label="View All" href="https://store.ubisoft.com/ubisoftplus" target="_blank" rel="noreferrer noopener">VIEW ALL GAMES</a>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="UbiNews">
+    <div class="UbiNewsTitle">
+        <h2 class="UbiNewsTitleT">Latest News</h2>
+    </div>
+
+    <div class="UbiLinks" role="tablist">
+        <button class="tab active" data-tab="all-news" role="tab" aria-selected="true" aria-controls="all-news" id="tab-all-news">All News</button>
+        <button class="tab" data-tab="assassins-creed" role="tab" aria-selected="false" aria-controls="assassins-creed" id="tab-assassins-creed">Assassin's Creed</button>
+        <button class="tab" data-tab="rainbow-six" role="tab" aria-selected="false" aria-controls="rainbow-six" id="tab-rainbow-six">Rainbow Six</button>
+        <button class="tab" data-tab="star-wars-outlaws" role="tab" aria-selected="false" aria-controls="star-wars-outlaws" id="tab-star-wars-outlaws">Star Wars Outlaws</button>
+        <button class="tab" data-tab="the-division" role="tab" aria-selected="false" aria-controls="the-division" id="tab-the-division">The Division</button>
+    </div>
+
+
+    <div class="UbiNewsContent">
+        <div class="tab-content active" id="all-news" role="tabpanel" aria-labelledby="tab-all-news">
+            <p>Welcome to all the latest news from Ubisoft! Stay tuned for updates on all your favorite games.</p>
+            <div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="assassins-creed" role="tabpanel" aria-labelledby="tab-assassins-creed">
+            <p>Discover the newest updates and stories from Assassin's Creed. Dive into the rich lore and upcoming features.</p>
+            <div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+            <div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="rainbow-six" role="tabpanel" aria-labelledby="tab-rainbow-six">
+            <p>Stay informed about the latest developments in Rainbow Six. Learn about new operators, maps, and game modes.</p>
+            <div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+            <div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+            <div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="star-wars-outlaws" role="tabpanel" aria-labelledby="tab-star-wars-outlaws">
+            <p>Get the scoop on Star Wars Outlaws. Explore the open-world adventures and exclusive content coming your way.</p>
+            <div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="the-division" role="tabpanel" aria-labelledby="tab-the-division">
+            <p>Catch up with The Division's newest updates. From missions to expansions, stay ahead with all the latest news.</p>
+            <div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div><div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div><div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div><div class="searchFeed">
+                <div class="searchFeed__results">
+            
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I4u8DfLe8AYUQOTd22JdH/3d8cd85684ebaa42c3eb53823f2890e9/Y9S3_Operator_Keyart.jpg" alt="Rainbow Six Siege – Operation Twin Shells">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">August 26, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege – Operation Twin Shells Operator and Gadget Guide</h2>
+                               
+                            </div>
+                        </div>
+                    </a>
+            
+
+                    <a class="searchFeed__results__item" href="#">
+                        <div class="searchFeed__results__item__wrapper">
+                            <div class="searchFeed__results__item__wrapper__media">
+                                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Gpr0GpgIM7PKvZHVFawZn/1e3f89b7408c814274dd9d5c64f9604d/un-r6s-mute-protocol-3-event-thumbnail960x540.jpg" alt="Rainbow Six Siege MUTE Protocol 3 Event">
+                            </div>
+                            <div class="searchFeed__results__item__wrapper__content">
+                                <span class="date">July 10, 2024</span>
+                                <h2 class="searchFeed__results__item__wrapper__content__title">Rainbow Six Siege MUTE Protocol 3 Event Brings Back Arms Race Game Mode</h2>
+            
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dd">
+        <a class="UbiButtonD" aria-label="View All" href="https://store.ubisoft.com/ubisoftplus" target="_blank" rel="noreferrer noopener">ALL NEWS</a>
+    </div>
+</div>
+
+
+
+
+
+  <!-- UBISOFT STORE -->
+
+  <div class="UbiNews">
+    <div class="UbiNewsTitle">
+        <h2 class="UbiNewsTitleT">UBISOFT STORE</h2>
+    </div>
+  
+    
+
+    <div class="promoList">
+        <a href="#" target="blank" rel="noopener noreferrer">
+            <div class="promo">
+                <div class="promo__title">PLAY STAR WARS OUTLAWS NOW</div>
+                <div class="promo__wrapper__media">
+                    <img  src="../assets/Images/GamePicture/stwo.jpg" alt="Star Wars Outlaws Promo">
+                </div>
+            </div>
+        </a>
+    
+        <a href="#" target="blank" rel="noopener noreferrer">
+            <div class="promo">
+                <div class="promo__title">PRE-ORDER AND GET BONUS QUEST “THROWN TO THE DOGS”</div>
+                <div class="promo__wrapper__media">
+                    <img  src="../assets/Images/GamePicture/peakpx.jpg" alt="Assassin's Creed Promo">
+                </div>
+            </div>
+        </a>
+    
+        <a href="#" target="blank" rel="noopener noreferrer">
+            <div class="promo">
+                <div class="promo__title">ADD TO WISHLIST</div>
+                <div class="promo__wrapper__media">
+                    <img src="../assets/Images/GamePicture/skb3.avif" alt="Anno 1800 Promo">
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
+  <!--  INSIDE UBISOFT -->
+
+</body>
+
+<footer class="footer">
+    
+</footer>
+<script>
+    // JavaScript Code
+    const carousel = document.querySelector('.draggable-carousel');
+        const gallery = document.querySelector('.game-gallery');
+
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID;
+
+        // Disable context menu on carousel
+        carousel.addEventListener('contextmenu', (e) => e.preventDefault());
+
+        // Mouse events
+        carousel.addEventListener('mousedown', dragStart);
+        carousel.addEventListener('mouseup', dragEnd);
+        carousel.addEventListener('mousemove', drag);
+        carousel.addEventListener('mouseleave', dragEnd);
+
+        // Touch events
+        carousel.addEventListener('touchstart', dragStart);
+        carousel.addEventListener('touchend', dragEnd);
+        carousel.addEventListener('touchmove', drag);
+
+        function dragStart(event) {
+            isDragging = true;
+            startPos = getPositionX(event);
+            animationID = requestAnimationFrame(animation);
+        }
+
+        function dragEnd() {
+            isDragging = false;
+            cancelAnimationFrame(animationID);
+            prevTranslate = currentTranslate;
+        }
+
+        function drag(event) {
+            if (isDragging) {
+                const currentPosition = getPositionX(event);
+                currentTranslate = prevTranslate + currentPosition - startPos;
+            }
+        }
+
+        function getPositionX(event) {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+        }
+
+        function animation() {
+            setSliderPosition();
+            if (isDragging) {
+                requestAnimationFrame(animation);
+            }
+        }
+
+        function setSliderPosition() {
+            const galleryWidth = gallery.scrollWidth;
+            const carouselWidth = carousel.offsetWidth;
+            const maxTranslate = 0;
+            const minTranslate = carouselWidth - galleryWidth;
+
+            // Limit the translate value to prevent empty space
+            if (currentTranslate > maxTranslate) {
+                currentTranslate = maxTranslate;
+            } else if (currentTranslate < minTranslate) {
+                currentTranslate = minTranslate;
+            }
+
+            gallery.style.transform = `translateX(${currentTranslate}px)`;
+        }
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabs = document.querySelectorAll('.UbiLinks .tab');
+        const contents = document.querySelectorAll('.UbiNewsContent .tab-content');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                activateTab(tab);
+            });
+
+            // Add keyboard navigation
+            tab.addEventListener('keydown', (e) => {
+                let newIndex = null;
+                if (e.key === 'ArrowRight') {
+                    newIndex = (index + 1) % tabs.length;
+                } else if (e.key === 'ArrowLeft') {
+                    newIndex = (index - 1 + tabs.length) % tabs.length;
+                }
+                if (newIndex !== null) {
+                    activateTab(tabs[newIndex]);
+                    tabs[newIndex].focus();
+                }
+            });
+        });
+
+        function activateTab(tab) {
+            // Remove active class from all tabs
+            tabs.forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+
+            // Add active class to the clicked tab
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+
+            // Hide all content
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Show the content corresponding to the clicked tab
+            const target = tab.getAttribute('data-tab');
+            document.getElementById(target).classList.add('active');
+        }
+    });
+
+ function toggleSearchBar() {
+    const searchBarContainer = document.querySelector('.search-bar-container');
+    searchBarContainer.classList.toggle('active');
+    
+  
+    if (searchBarContainer.classList.contains('active')) {
+      searchBarContainer.querySelector('.search-bar').focus();
+    }
+  }
+</script>
+
+</script>
+<script>src="../index.js"</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+<script src="https://kit.fontawesome.com/ba60f3acb6.js" crossorigin="anonymous"></script>
+</html>
+
+
+

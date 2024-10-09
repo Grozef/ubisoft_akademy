@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width:100vw;
+
+}
+
+
+.pink{
+    color:#e43381;
+}
+.white{
+    color:white;
+}
+.black{
+    color:black;
+}
+
+.center{
+    display:flex;
+    justify-content: center;
+}
+
+.fullwidth{
+    width:100%;
+}
+
+.UbiButtonC {
+    background-color: #000000 !important;
+    color: white !important;
+    padding: 10px 30px !important;
+    border-radius:25px !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none;
+}
+
+.UbiButtonC:hover {
+    background-color: #ffff  !important;
+    color: rgb(0, 0, 0)  !important;
+}
+
+.UbiButtonD {
+    background-color: #ff0099 !important;
+    color: white !important;
+    padding: 10px 30px !important;
+    border-radius:25px !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none;
+}
+
+.UbiButtonD:hover {
+    background-color: #ffff  !important;
+    color: #ff0099 !important;
+}
+
+
+
+
+.UbiLinks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.UbiLinks .tab {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #eb12b1;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+    position: relative;
+}
+
+.UbiLinks .tab::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #d21567;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

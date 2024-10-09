@@ -1,0 +1,107 @@
+.slide1 {
+    background-image: url('../assets/Images/GamePicture/peakpx.jpg');
+    background-image: cover;
+}
+.slide2 {
+    background-image: cover;
+    background-image: url('../assets/Images/GamePicture/xd.jpg');
+}
+.slide3 {
+    background-image: cover;
+    background-image: url('../assets/Images/GamePicture/stwo.jpg');
+}
+
+#gameCarousel {
+    height: auto; /* Full viewport height */
+    position: relative;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.carousel-indicators button {
+    background-color: #fff;
+}
+.carousel-item {
+    position: relative;
+    height: auto; 
+    min-height: 900px; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1; /* Ensures the overlay is above the image but below the text */
+}
+
+.UbiCarouselCaption {
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+}
+.carousel-caption {
+    position: relative;
+    right: 15%;
+    bottom: 50%;
+    left: 15%;
+    top: 50%;
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+
+}
+.UbiCarouselTittle{
+color: #fff;
+font-size: 5rem;
+line-height: 4.125rem;
+letter-spacing: 0;
+}
+.UbiCarouselText{
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 3rem;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-top: 15px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display:none;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.fixed-button {
+    position: absolute;
+    z-index: 10;
+
+}
+.UbiPlusButton {
+    width: auto;
+    height: 80px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.UbiPlusButton:hover {
+    transform: scale(1.05); 
+    filter: brightness(1.2); 
+    background-color: transparent; 
+}
+

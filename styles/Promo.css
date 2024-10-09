@@ -1,0 +1,48 @@
+.UbiPromo {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7u0o3i84kn2M0zywawe5fA/a8902829949db3924b91a4005482c871/ubisoft-evergreen_full_banner-xdef_season2-desktop-v3.jpg');
+}
+
+.UbiPromoImg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1050;
+}
+
+.UbiPromoImg img {
+    width: 100px;
+    height: auto;
+}
+
+.UbiPromoContenu {
+    max-width: 800px;
+    text-align: center;
+    color: white;
+}
+
+.UbiPromoTittle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.UbiPromoText {
+    font-size: 0.875rem;
+    color: #ddd;
+}
+
+.UbiPromoButton {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

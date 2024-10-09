@@ -1,0 +1,141 @@
+.UbiExploreGames {
+    width: 100%;
+    padding: var(--promo-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.UbiPromoTitle{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0 20px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+}
+
+.games {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+
+
+
+
+
+
+
+.game-gallery {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+
+.game-item {
+    flex: 0 0 calc(100% / 6); /* Display up to 6 items */
+    max-width: calc(100% / 6);
+    padding: 10px;
+}
+
+.ss{
+
+
+}
+.game-item:hover {
+    box-shadow: var(--card-hover-box-shadow);
+    transform: translateY(-5px);
+}
+
+.draggable-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+    background: linear-gradient(to bottom, #ededed, #ffffff);
+    padding: 80px 50px 80px 0;
+}
+
+.draggable-carousel:active {
+    cursor: grabbing;
+}
+
+.game-gallery {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.game-item {
+    flex: 0 0 calc(100% / 6); /* Display up to 6 items */
+    max-width: calc(100% / 6);
+    padding: 10px;
+}
+
+.game-item img {
+    width: 100%;
+    display: block;
+}
+
+.game-item h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.dd{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 80px;
+}
+
+/* Responsivity Adjustments */
+@media (max-width: 1200px) {
+    .game-gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .game-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .game-item h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-item h4 {
+        font-size: 0.8rem;
+    }
+}
+
+.Ul{
+    padding-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

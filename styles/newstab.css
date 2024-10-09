@@ -1,0 +1,126 @@
+/* Latest News Section */
+.UbiNews {
+    width: 100%;
+    padding: 40px 20px; /* Adjust padding as needed */
+    background: linear-gradient(to bottom, #ededed, #ffffff); /* Gradient background */
+    box-sizing: border-box;
+}
+
+/* News Title */
+.UbiNewsTitleT {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+/* Tabs Navigation */
+.UbiNewsTabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.UbiNewsTabs .tab {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #eb12b1;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+    position: relative;
+}
+
+.UbiNewsTabs .tab::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #d21567;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.UbiNewsTabs .tab:hover::after,
+.UbiNewsTabs .tab.active::after {
+    width: 100%;
+}
+
+.UbiNewsTabs .tab.active {
+    font-weight: bold;
+    color: #bd0052;
+}
+
+/* Tabs Content */
+.UbiNewsContent {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px;
+}
+
+.tab-content {
+    display: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.tab-content.active {
+    display: block;
+}
+.searchFeed {
+    display: flex;
+    justify-content: center;
+}
+.searchFeed__results {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1472px;
+    gap: 16px;
+    margin: 0 auto;
+}
+.searchFeed__results__item {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+.searchFeed__results__item__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.searchFeed__results__item__wrapper__media img {
+    width: 100%;
+    height: auto;
+}
+.searchFeed__results__item__wrapper__content {
+    padding: 16px;
+    font-family: Arial, sans-serif;
+}
+.searchFeed__results__item__wrapper__content__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.date {
+    font-size: 14px;
+    color: #777;
+}
+.searchFeed__results__item__wrapper__content__abstract {
+    font-size: 14px;
+    color: #555;
+}
