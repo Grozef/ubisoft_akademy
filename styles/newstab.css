@@ -1,13 +1,22 @@
 /* Latest News Section */
+@font-face {
+    font-family: 'Ubisoft Sans';
+    src: url('../assets/font/Ubisoft Sans Bold.ttf') format('truetype'); /* Chemin vers le fichier */
+    font-weight: bold;
+    font-style: normal;
+}
+
 .UbiNews {
     width: 100%;
     padding: 40px 20px; /* Adjust padding as needed */
     background: linear-gradient(to bottom, #ededed, #ffffff); /* Gradient background */
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* News Title */
 .UbiNewsTitleT {
+    font-family: 'Ubisoft Sans Bold';
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
