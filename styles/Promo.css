@@ -1,8 +1,7 @@
 /* Conteneur Flex pour les promotions */
 .promoList {
     display: flex;
-    justify-content: space-between; /* Espace égal entre les items */
-    gap: 1rem; /* Espacement entre les cartes */
+
     flex-wrap: nowrap; /* Empêche le retour à la ligne */
     overflow-x: hidden;
     overflow-y: hidden; /* Désactive le défilement vertical */
@@ -10,8 +9,6 @@
 
 .promoList_acdu {
     display: flex;
-    justify-content: space-between; /* Espace égal entre les items */
-    gap: 1rem; /* Espacement entre les cartes */
     flex-wrap: nowrap; /* Empêche le retour à la ligne */
     overflow-x: auto; /* Permet un défilement horizontal si nécessaire */
     margin-left: 10px;
@@ -126,4 +123,61 @@ a {
 a:hover .promo__title, a:hover .UbiPromoTittle {
     text-decoration: underline;
     font-family: 'Ubisoft Sans Bold';
+}
+
+/* Fans Ubisoft */
+.wrapperFan {
+    background: linear-gradient(to bottom, #ededed, #ffffff); /* Gradient background */
+    display: flex;
+    flex-direction: row;
+    height: auto; /* Pour que l'ensemble prenne la hauteur de la fenêtre */
+    align-items: center; /* Centrer verticalement */
+    justify-content: space-between; /* Espacer les deux divs */
+    padding: 0 2rem; /* Ajoute un padding pour éviter que le contenu touche les bords */
+}
+
+.left {
+    display: flex;
+    flex-direction: column; /* Organise les éléments en colonne */
+    justify-content: center; /* Centre verticalement dans la div */
+    align-items: center; /* Centre horizontalement */
+    max-width: 50%;
+    margin-right: 10px;
+
+}
+
+.leftTitle {
+    font-family: 'Ubisoft Sans Bold';
+    font-weight: bold;
+    font-size: 40px; /* Taille du titre */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 1.5rem; /* Espacement sous le titre */
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+.ddd {
+    margin-top: 1rem; /* Espacement entre le bouton et le titre */
+    margin-top: 0%;
+    padding-top: 0%;
+    align-items: left
+    ;
+}
+
+.right {
+    max-width: 50%;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement dans la div */
+    align-items: center; /* Centre l'image verticalement dans la div */
+}
+
+.imgRight {
+    max-width: 100%;
+    height: auto; /* Assure que l'image conserve ses proportions */
+    margin-top: 75px;
+    margin-right: 50px;
+    padding-top: 75 px;
+    padding-bottom: 75px;
 }
