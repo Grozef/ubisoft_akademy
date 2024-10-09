@@ -1,48 +1,124 @@
-.UbiPromo {
+/* Conteneur Flex pour les promotions */
+.promoList {
+    display: flex;
+    justify-content: space-between; /* Espace égal entre les items */
+    gap: 1rem; /* Espacement entre les cartes */
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
+    overflow-x: auto; /* Permet un défilement horizontal si nécessaire */
+}
+
+.promoList_acdu {
+    display: flex;
+    justify-content: space-between; /* Espace égal entre les items */
+    gap: 1rem; /* Espacement entre les cartes */
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
+    overflow-x: auto; /* Permet un défilement horizontal si nécessaire */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Style des cartes de promotion */
+.promo {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 4rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7u0o3i84kn2M0zywawe5fA/a8902829949db3924b91a4005482c871/ubisoft-evergreen_full_banner-xdef_season2-desktop-v3.jpg');
+    padding: 1rem;
+    flex-basis: 30%; /* Force la carte à prendre 30% de la largeur */
+    transition: transform 0.3s ease;
 }
 
-.UbiPromoImg {
+.promo:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+/* Ajout d'un dégradé noir en haut de l'image */
+.promo__wrapper__media {
+    position: relative;
+    overflow: hidden; /* Cache le débordement pour le dégradé */
+}
+
+.promo__wrapper__media::before {
+    content: '';
     position: absolute;
-    top: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 30%, transparent); /* Dégradé noir */
+    z-index: 1; /* Mettre le dégradé derrière le titre */
+}
+
+/* Positionnement du titre sur l'image */
+.UbiPromoTittle, .promo__title {
+    position: absolute;
+    top: 20px; /* Titre en haut de l'image */
     left: 20px;
-    z-index: 1050;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    font-weight: bold;
+    z-index: 2; /* Mettre le titre au-dessus du dégradé */
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: calc(100% - 40px); /* Pour que le titre s'adapte à la largeur */
+}
+/* promo acdu */
+.promo_acdu {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 1rem;
+    flex-basis: 30%; /* Force la carte à prendre 30% de la largeur */
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+/* Conteneur pour les images ACdu */
+.promo__wrapper__media_acdu {
+    position: relative;
+    overflow: hidden; /* Empêche le débordement */
+    width: 100%; /* Prend toute la largeur de son conteneur parent */
+    max-width: 100%; /* Limite à 100% de la largeur de l'écran */
+    padding: 4px; /* Espace intérieur autour des images */
+    box-sizing: border-box; /* Inclut le padding dans le calcul de la largeur totale */
+}
+/* titre au coeur d'ubisoft */
+.promo__title_inside {
+    position: absolute;
+    bottom: 20px; /* Titre en haut de l'image */
+    left: 20px;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    font-weight: bold;
+    z-index: 2; /* Mettre le titre au-dessus du dégradé */
+    padding: 30px;
+    border-radius: 4px;
+    width: calc(100% - 40px); /* Pour que le titre s'adapte à la largeur */
+    background: rgba(0, 0, 0, 0.5); /* Fond noir avec opacité */
+    text-align: top;
+}
+/* Style pour les images dans chaque promo ACdu */
+.imgUbiStore_acdu {
+    width: 100%; /* Remplir toute la largeur du conteneur */
+    height: 100%; /* Remplir toute la hauteur du conteneur */
+    border-radius: 8px;
+    object-fit: cover; /* Maintenir le ratio d'aspect et couvrir l'espace */
 }
 
-.UbiPromoImg img {
-    width: 100px;
-    height: auto;
+/* Style pour l'image dans chaque promo */
+.imgUbiStore {
+    width: 100%; /* Utiliser 100% de la largeur du conteneur */
+    height: 300px; /* Définir une hauteur fixe pour uniformiser les cartes */
+    border-radius: 8px;
+    object-fit: cover; /* Couvrir l'espace tout en gardant l'aspect ratio */
 }
 
-.UbiPromoContenu {
-    max-width: 800px;
-    text-align: center;
-    color: white;
+/* Liens sans soulignement */
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.UbiPromoTittle {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.UbiPromoText {
-    font-size: 0.875rem;
-    color: #ddd;
-}
-
-.UbiPromoButton {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+a:hover .promo__title, a:hover .UbiPromoTittle {
+    text-decoration: underline;
 }
